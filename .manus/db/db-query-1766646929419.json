@@ -1,0 +1,37 @@
+{
+  "query": "SELECT id, name, phone, email, address, city, state FROM leads WHERE name LIKE '%Kevin%' OR name LIKE '%kevin%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Uyd3Liwh3sGsMt.root --database 6uNros3Y2qtXxTtyi8V5g7 --execute SELECT id, name, phone, email, address, city, state FROM leads WHERE name LIKE '%Kevin%' OR name LIKE '%kevin%';",
+  "rows": [
+    {
+      "id": "30001",
+      "name": "Kevin Monterosa ",
+      "phone": "4044066738",
+      "email": "NULL",
+      "address": "3815 Derby Hall Dr",
+      "city": "NULL",
+      "state": "NULL"
+    },
+    {
+      "id": "30002",
+      "name": "Kevin Monterosa ",
+      "phone": "4044066738",
+      "email": "NULL",
+      "address": "3815 Derby Hall Dr",
+      "city": "NULL",
+      "state": "NULL"
+    },
+    {
+      "id": "30003",
+      "name": "Kevin Monterosa ",
+      "phone": "4044066738",
+      "email": "NULL",
+      "address": "3815 Derby Hall Dr",
+      "city": "NULL",
+      "state": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tphone\temail\taddress\tcity\tstate\n30001\tKevin Monterosa \t4044066738\tNULL\t3815 Derby Hall Dr\tNULL\tNULL\n30002\tKevin Monterosa \t4044066738\tNULL\t3815 Derby Hall Dr\tNULL\tNULL\n30003\tKevin Monterosa \t4044066738\tNULL\t3815 Derby Hall Dr\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 836
+}

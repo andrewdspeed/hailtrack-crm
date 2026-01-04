@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS repair_parts (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  lead_id INT NOT NULL,\n  estimate_id INT,\n  part_name VARCHAR(255) NOT NULL,\n  part_number VARCHAR(100),\n  quantity INT NOT NULL DEFAULT 1,\n  unit_cost INT,\n  total_cost INT,\n  supplier VARCHAR(255),\n  status ENUM('needed', 'ordered', 'received', 'installed') DEFAULT 'needed',\n  ordered_date TIMESTAMP NULL,\n  received_date TIMESTAMP NULL,\n  installed_date TIMESTAMP NULL,\n  receipt_url TEXT,\n  notes TEXT,\n  created_by VARCHAR(255),\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Uyd3Liwh3sGsMt.root --database 6uNros3Y2qtXxTtyi8V5g7 --execute CREATE TABLE IF NOT EXISTS repair_parts (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  lead_id INT NOT NULL,\n  estimate_id INT,\n  part_name VARCHAR(255) NOT NULL,\n  part_number VARCHAR(100),\n  quantity INT NOT NULL DEFAULT 1,\n  unit_cost INT,\n  total_cost INT,\n  supplier VARCHAR(255),\n  status ENUM('needed', 'ordered', 'received', 'installed') DEFAULT 'needed',\n  ordered_date TIMESTAMP NULL,\n  received_date TIMESTAMP NULL,\n  installed_date TIMESTAMP NULL,\n  receipt_url TEXT,\n  notes TEXT,\n  created_by VARCHAR(255),\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 175
+}

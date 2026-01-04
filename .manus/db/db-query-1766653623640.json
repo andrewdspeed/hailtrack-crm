@@ -1,0 +1,106 @@
+{
+  "query": "SHOW TABLES;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Uyd3Liwh3sGsMt.root --database 6uNros3Y2qtXxTtyi8V5g7 --execute SHOW TABLES;",
+  "rows": [
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "__drizzle_migrations"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "customer_messages"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "customer_portal_access"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "customer_tags"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "customers"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "estimate_line_items"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "estimates"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "follow_ups"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "inspection_items"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "inspections"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "insurance_payments"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "invoice_line_items"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "invoices"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "job_assignments"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "lead_tags"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "leads"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "loaner_assignments"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "loaner_vehicles"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "permissions"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "reminders"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "role_permissions"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "roles"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "tags"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "technicians"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "text_templates"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "user_permissions"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "user_roles"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "users"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "vehicle_documents"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "vehicle_insurance"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "vehicle_photos"
+    },
+    {
+      "Tables_in_6uNros3Y2qtXxTtyi8V5g7": "vehicles"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_6uNros3Y2qtXxTtyi8V5g7\n__drizzle_migrations\ncustomer_messages\ncustomer_portal_access\ncustomer_tags\ncustomers\nestimate_line_items\nestimates\nfollow_ups\ninspection_items\ninspections\ninsurance_payments\ninvoice_line_items\ninvoices\njob_assignments\nlead_tags\nleads\nloaner_assignments\nloaner_vehicles\npermissions\nreminders\nrole_permissions\nroles\ntags\ntechnicians\ntext_templates\nuser_permissions\nuser_roles\nusers\nvehicle_documents\nvehicle_insurance\nvehicle_photos\nvehicles\n",
+  "stderr": "",
+  "execution_time_ms": 102
+}

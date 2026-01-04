@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO tags (name, color) VALUES \n('Hot Lead', '#ef4444'),\n('VIP', '#8b5cf6'),\n('Referral', '#10b981'),\n('Follow Up', '#f59e0b'),\n('Priority', '#ec4899')\nON DUPLICATE KEY UPDATE name=name;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Uyd3Liwh3sGsMt.root --database 6uNros3Y2qtXxTtyi8V5g7 --execute INSERT INTO tags (name, color) VALUES \n('Hot Lead', '#ef4444'),\n('VIP', '#8b5cf6'),\n('Referral', '#10b981'),\n('Follow Up', '#f59e0b'),\n('Priority', '#ec4899')\nON DUPLICATE KEY UPDATE name=name;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 65
+}

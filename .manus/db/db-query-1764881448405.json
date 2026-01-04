@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS `lead_calendar_events` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`lead_id` int NOT NULL,\n\t`event_id` varchar(255) NOT NULL,\n\t`event_link` text,\n\t`scheduled_date` timestamp NOT NULL,\n\t`created_at` timestamp NOT NULL DEFAULT (now()),\n\tCONSTRAINT `lead_calendar_events_id` PRIMARY KEY(`id`)\n);\nCREATE TABLE IF NOT EXISTS `user_calendar_tokens` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`user_id` int NOT NULL,\n\t`access_token` text NOT NULL,\n\t`refresh_token` text,\n\t`expires_at` timestamp,\n\t`created_at` timestamp NOT NULL DEFAULT (now()),\n\t`updated_at` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `user_calendar_tokens_id` PRIMARY KEY(`id`)\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Uyd3Liwh3sGsMt.root --database 6uNros3Y2qtXxTtyi8V5g7 --execute CREATE TABLE IF NOT EXISTS `lead_calendar_events` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`lead_id` int NOT NULL,\n\t`event_id` varchar(255) NOT NULL,\n\t`event_link` text,\n\t`scheduled_date` timestamp NOT NULL,\n\t`created_at` timestamp NOT NULL DEFAULT (now()),\n\tCONSTRAINT `lead_calendar_events_id` PRIMARY KEY(`id`)\n);\nCREATE TABLE IF NOT EXISTS `user_calendar_tokens` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`user_id` int NOT NULL,\n\t`access_token` text NOT NULL,\n\t`refresh_token` text,\n\t`expires_at` timestamp,\n\t`created_at` timestamp NOT NULL DEFAULT (now()),\n\t`updated_at` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `user_calendar_tokens_id` PRIMARY KEY(`id`)\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 103
+}

@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE leads \nADD COLUMN source VARCHAR(100),\nADD COLUMN source_details TEXT,\nADD COLUMN referral_code VARCHAR(50),\nADD COLUMN referred_by INT;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Uyd3Liwh3sGsMt.root --database 6uNros3Y2qtXxTtyi8V5g7 --execute ALTER TABLE leads \nADD COLUMN source VARCHAR(100),\nADD COLUMN source_details TEXT,\nADD COLUMN referral_code VARCHAR(50),\nADD COLUMN referred_by INT;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2174
+}

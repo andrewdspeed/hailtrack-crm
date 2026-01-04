@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS active_routes (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  agent_id INT NOT NULL,\n  agent_name VARCHAR(255) NOT NULL,\n  route_name VARCHAR(255) NOT NULL,\n  route_type VARCHAR(100),\n  priority INT DEFAULT 5,\n  total_stops INT NOT NULL,\n  completed_stops INT DEFAULT 0,\n  total_distance DECIMAL(10, 2),\n  estimated_time INT,\n  current_latitude VARCHAR(50),\n  current_longitude VARCHAR(50),\n  last_location_update TIMESTAMP NULL,\n  status ENUM('active', 'paused', 'completed', 'cancelled') DEFAULT 'active' NOT NULL,\n  territory_id INT,\n  started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  completed_at TIMESTAMP NULL,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Uyd3Liwh3sGsMt.root --database 6uNros3Y2qtXxTtyi8V5g7 --execute CREATE TABLE IF NOT EXISTS active_routes (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  agent_id INT NOT NULL,\n  agent_name VARCHAR(255) NOT NULL,\n  route_name VARCHAR(255) NOT NULL,\n  route_type VARCHAR(100),\n  priority INT DEFAULT 5,\n  total_stops INT NOT NULL,\n  completed_stops INT DEFAULT 0,\n  total_distance DECIMAL(10, 2),\n  estimated_time INT,\n  current_latitude VARCHAR(50),\n  current_longitude VARCHAR(50),\n  last_location_update TIMESTAMP NULL,\n  status ENUM('active', 'paused', 'completed', 'cancelled') DEFAULT 'active' NOT NULL,\n  territory_id INT,\n  started_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  completed_at TIMESTAMP NULL,\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 201
+}

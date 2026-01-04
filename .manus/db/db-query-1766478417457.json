@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE authorization_forms (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  lead_id INT NOT NULL,\n  form_type ENUM('direction_to_pay', 'repair_authorization', 'release_of_liability', 'other') NOT NULL,\n  status ENUM('pending', 'signed', 'voided') DEFAULT 'pending',\n  form_data TEXT,\n  signature_data TEXT,\n  signed_by VARCHAR(255),\n  signed_at TIMESTAMP NULL,\n  pdf_url TEXT,\n  created_by VARCHAR(255),\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2Uyd3Liwh3sGsMt.root --database 6uNros3Y2qtXxTtyi8V5g7 --execute CREATE TABLE authorization_forms (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  lead_id INT NOT NULL,\n  form_type ENUM('direction_to_pay', 'repair_authorization', 'release_of_liability', 'other') NOT NULL,\n  status ENUM('pending', 'signed', 'voided') DEFAULT 'pending',\n  form_data TEXT,\n  signature_data TEXT,\n  signed_by VARCHAR(255),\n  signed_at TIMESTAMP NULL,\n  pdf_url TEXT,\n  created_by VARCHAR(255),\n  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 304
+}

@@ -1,0 +1,5 @@
+Kevin's Lead Data Backup (to be restored after restructuring)
+============================================================
+Note: 3 records found with "Kevin" in name - will restore after schema change
+
+Query: SELECT name, phone, email, address, city, state FROM leads WHERE name LIKE '%Kevin%';
